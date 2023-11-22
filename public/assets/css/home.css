@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  /* Align items to the right */
+}
+
+ nav > .navbar {
+  background-color: rgb(255, 255, 255);
+  top: 0;
+}
+
+nav ul {
+  padding-right: 50px;
+  list-style-type: none;
+  margin: 0;
+  /* Remove default margin */
+  display: flex;
+  justify-content: flex-end;
+  /* Align items to the right */
+}
+
+nav li {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav>ul>li>a:hover {
+  color: rgb(34, 225, 34);
+  transition: all .4s ease-in-out;
+  text-decoration: none;
+}
+
+nav>ul>li.active>a:hover {
+  color: black !important;
+}
+
+.container {
+  padding-top: 70px;
+  /* Sesuaikan nilai ini dengan tinggi navbar Anda */
+}
+
+nav>ul>li>a:hover {
+  color: rgb(34, 225, 34);
+  transition: all .4s ease-in-out;
+  
+}
+
+nav>ul>li>.active:hover {
+  color: black !important;
+  border-bottom: 3px black;
+}
+
+/* gambar dan button */
+.image-with-text {
+  text-align: none;
+  width: 1440px;
+}
+
+.image-with-text img {
+  width: 1440px;
+  height: 750px;
+  /* Sesuaikan ukuran gambar sesuai kebutuhan */
+}
+
+.image-with-text p {
+  position: absolute;
+  top: 40%;
+  /* Mengatur teks ke tengah vertikal elemen */
+  left: 30%;
+  /* Mengatur teks ke tengah horizontal elemen */
+  transform: translate(-50%, -50%);
+  /* Mengatur teks agar benar-benar berada di tengah */
+  color: rgb(255, 255, 255);
+  /* Warna teks */
+  background: transparent;
+  /* Latar belakang transparan untuk kontras teks */
+  padding: 10px 20px;
+  /* Spasi teks */
+  border-radius: 5px;
+  /* Sudut melengkung pada teks */
+  font-size: 50px;
+}
+
+/* css get button */
+.image-with-text a {
+  position: absolute;
+  text-decoration: none;
+  top: 80%;
+  /* Mengatur teks ke tengah vertikal elemen */
+  left: 20%;
+  /* Mengatur teks ke tengah horizontal elemen */
+  background-color: rgb(37, 48, 174);
+  /* Warna latar belakang tombol */
+  color: #fff;
+  /* Warna teks tombol */
+  padding: 10px 20px;
+  /* Spasi tombol */
+  border: none;
+  /* Menghilangkan garis batas */
+  border-radius: 5px;
+  /* Sudut melengkung pada tombol */
+  font-size: 18px;
+  /* Ukuran teks tombol */
+  cursor: pointer;
+  /* Mengubah kursor saat dihover ke tanda tangan */
+}
+
+.get-started-button:hover {
+  background-color: #281df2;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/* deskripsi */
+.deskripsi-container {
+  background-color: #ffffff;
+  height: 300px;
+  margin: 40px;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 2px 0 5px rgb(231, 231, 231);
+}
+
+.deskripsi-container>div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deskripsi-container>div>div {
+  width: 500px;
+}
+
+.deskripsi-container>img {
+  width: 40%;
+  object-fit: cover;
+  text-align: right;
+}
+
+.deskripsi-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.font-weight-read {
+  font-weight: bold;
+}
+
+.deskripsi-container>div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 150px;
+  padding-left: 200px;
+}
